@@ -79,3 +79,12 @@ function postForm(obj, event) {
 
 
 }
+
+
+// Year Get Function
+function YearGet() {
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("Year").innerHTML = n;
+}
+YearGet();
