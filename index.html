@@ -30,7 +30,6 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#HOME" onclick="toHome()">Home</a>
         <a href="#ABOUT" onclick="toAbout()">About</a>
         <a href="#WHY" onclick="toWhy()">Why Run</a>
@@ -39,18 +38,19 @@
     </div>
 
     <!-- Use any element to open the sidenav -->
-    <div class="nav">
-        <div class="menu"><a onclick="openNav()" class="menu-open"><i class="fa fa-bars" aria-hidden="true" style="display: inline-block; cursor: pointer;"></i></a></div>
-        <div class="logo"></div>
-    </div>
+
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
+        <div class="nav">
+            <div class="menu"><a onclick="openNav()" class="menu-open"><i class="fa fa-bars" aria-hidden="true" style="display: inline-block; cursor: pointer;"></i></a></div>
+            <div class="logo"></div>
+        </div>
         <div class="head">
             <div class="dcm">
                 <img id="LOGO" src="img/logo.png" width="200px">
                 <h1 id="titletext" style="display: none;">surGe</h1>
-                <h2 id="sub" style="display: none;">Run for Passion | Passion for Running</h2>
+                <h2 id="sub" style="display: none;">Running for Passion</h2>
             </div>
         </div>
         <div class="about">
@@ -112,7 +112,7 @@
                 <p>Name:</p>
                 <input placeholder="Name" id="name" type="text" name="Name" required="required"><br>
                 <p>Surname:</p>
-                <input placeholder="Surname" type="text" name="Surname" required="required"><br>
+                <input placeholder="Surname" id="surname" type="text" name="Surname" required="required"><br>
                 <p>Email:</p>
                 <input placeholder="Email" type="email" name="Email" required="required"><br>
                 <p>Message:</p>
@@ -121,7 +121,7 @@
                 <button type="submit" id="submitbtn" class="runningbtn"><span>Submit </span></button>
             </form>
             <div class="thanks" style="display: none;">
-                <h1>Thanks <span id="namer"></span></h1>
+                <h1>Thanks For Your Submission <span id="namer"></span></h1>
             </div>
 
 

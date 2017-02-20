@@ -66,8 +66,9 @@ function slideHide() {
     $(".runningform").slideToggle(1000)
     $(".thanks").slideToggle(1000)
     var name = $("#name").val();
-
-    $("#namer").html(name)
+    var surname = $("#surname").val();
+    var f = name + " " + surname;
+    $("#namer").html(f)
 }
 
 function postForm(obj, event) {

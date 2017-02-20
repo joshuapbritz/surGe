@@ -45,6 +45,10 @@
     transition: 0.3s
 }
 
+#namer {
+    color: #ff6600;
+}
+
 
 /* When you mouse over the navigation links, change their color */
 
@@ -132,6 +136,12 @@
 @media only screen and (max-width: 600px) {
     .dcm {
         background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media screen and (max-width:680px) {
+    #LOGO {
+        display: none;
     }
 }
 
