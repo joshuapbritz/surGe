@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>surGe</title>
+    <script src="js/jquery3.1.1.js"></script>
+    <script src="js/animatescroll.js"></script>
+    <script src="js/appml.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Other Stylesheets-->
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#HOME" onclick="toHome()">Home</a>
+        <a href="#ABOUT" onclick="toAbout()">About</a>
+        <a href="#WHY" onclick="toWhy()">Why Run</a>
+        <a href="#SERVICES" onclick="toServices()">Our Services</a>
+        <a href="#CONTACT" onclick="toContact()">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <div class="nav">
+        <div class="menu"><a onclick="openNav()" class="menu-open"><i class="fa fa-bars" aria-hidden="true" style="display: inline-block; cursor: pointer;"></i></a></div>
+        <div class="logo"></div>
+    </div>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <div class="head">
+            <div class="dcm">
+                <h1>surGe</h1>
+                <h2>Run for Passion</h2>
+            </div>
+        </div>
+        <div class="about">
+            <div class="dcma">
+                <h1 class="marg-bot">We Help You Achieve Your Goals</h1>
+                <div class="col-md-4">
+                    <img src="img/abt-1.jpeg" id="abt-one" class="img-responsive img-circle abt-img " style="display:inline" alt="Goal">
+                    <h2>Set a Goal</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/abt-2.jpeg" id="abt-two" class="img-responsive img-circle abt-img " style="display:inline" alt="Course">
+                    <h2>Plan Your Course</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/abt-3.jpeg" id="abt-three" class="img-responsive img-circle abt-img " style="display:inline" alt="Victory">
+                    <h2>Achieve Anything</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="vid-overlay">
+                <video class="video" autoplay loop muted>
+                <source src="vid/vd-bg.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="services">
+            <div class="cont-img">
+                <a href="#"><img id="img6" src="img/pr1.png" class="img-responsive cont"></a>
+            </div>
+            <div class="cont-img">
+                <a href="#"><img id="img6" src="img/pr2.png" class="img-responsive cont"></a>
+            </div>
+            <div class="cont-img">
+                <a href="#"><img id="img6" src="img/pr3.png" class="img-responsive cont"></a>
+            </div>
+
+            <div class="cont-img">
+                <a href="#"><img id="img6" src="img/pr4.png" class="img-responsive cont"></a>
+            </div>
+            <div class="cont-img">
+                <a href="#"><img id="img6" src="img/pr5.png" class="img-responsive cont"></a>
+            </div>
+            <div class="cont-img">
+                <a href="#"><img id="img6" src="img/pr6.png" class="img-responsive cont"></a>
+            </div>
+        </div>
+        <div class="contact pad-bot">
+            <h1>Contact Us:</h1>
+            <br><br>
+            <form method="post" data-d="frmDone" action="http://api.tackter.io/api/UserForms" id="tactusFrm" onsubmit="$.post($(this).attr('action'), $(this).serialize(), function () { $('#tactusFrm').html ('<div>Thank you for your submission!</div>') }); event.preventDefault()"
+                class="runningform">
+                <input name="Token" value="21d51a19-2d8f-4a47-8b78-e9b8df69a4c8" type="hidden">
+                <input name="Subject" value="Email Subject" type="hidden">
+
+                <p>Name:</p><input placeholder="Name" name="Name" required="required" type="text"><br>
+                <p>Surname:</p><input placeholder="Surname" name="Surname" required="required" type="text"><br>
+                <p>Email:</p><input placeholder="Email" name="Email" required="required" type="email"><br>
+                <p>Message:</p><textarea placeholder="Message" name="Message" required="required"></textarea><br>
+                <span class="span" style="color:transparent;font-size:0px"><a href="http://tackter.io"> Powered by Tackter.io</a></span>
+                <button type="submit" class="runningbtn" id="submitbtn"><span>Hover </span></button>
+            </form>
+
+
+        </div>
+        <div class="foot">
+            <a onclick="toHome()">Go to Element</a>
+        </div>
+
+
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+
+</body>
+
+</html>
+
+<!--<div appml-include-html="foot.htm"></div>-->

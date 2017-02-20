@@ -1,0 +1,269 @@
+.nav {
+    height: auto;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    /*padding-top: 20px;*/
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.menu-open {
+    color: #fff;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.menu-open:hover {
+    color: lightgrey;
+    -webkit-transition: ease-in 0.3s;
+    -moz-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+}
+
+.head {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/head.JPG');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dcm {
+    text-align: center;
+    color: #000;
+    width: 500px;
+    height: 150px;
+    background-color: transparent;
+}
+
+.dcm h1 {
+    font-size: 70px;
+    text-transform: unset;
+}
+
+.dcm h2 {
+    font-size: 20px;
+    color: #262626;
+    line-height: 2px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .dcm {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dcm h1 {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dcm h2 {
+        color: #fff;
+    }
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/about.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        height: auto;
+    }
+}
+
+.dcma {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.portfolio {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.services {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: auto;
+    align-items: center;
+}
+
+.cont-img {
+    float: left;
+    width: 33.33%;
+    z-index: 50;
+}
+
+@media screen and (max-width:680px) {
+    .cont-img {
+        width: 100%;
+    }
+}
+
+.contact {
+    clear: both;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.pad-bot {
+    padding-top: 30px;
+}
+
+.foot {
+    width: 100%;
+    height: 25vh;
+    background-color: #000;
+}
+
+.marg-bot {
+    margin-bottom: 200px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.vid-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+}
+
+.pad-marg {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.abt-img {
+    width: 350px;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .abt-img {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about h2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dcma {
+        padding: 1px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .marg-bot {
+        margin-bottom: 20px;
+    }
+}
