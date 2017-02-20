@@ -98,30 +98,37 @@
         <div class="contact pad-bot">
             <h1>Contact Us:</h1>
             <br><br>
-            <form method="post" data-d="frmDone" action="http://api.tackter.io/api/UserForms" id="tactusFrm" onsubmit="$.post($(this).attr('action'), $(this).serialize(), function () { $('#tactusFrm').html ('<div>Thank you for your submission!</div>') }); event.preventDefault()"
-                class="runningform">
-                <input name="Token" value="21d51a19-2d8f-4a47-8b78-e9b8df69a4c8" type="hidden">
-                <input name="Subject" value="Email Subject" type="hidden">
+            <form method="post" data-d="frmDone" action="http://api.tackter.io/api/UserForms" id="tactusFrm" onsubmit="return postForm(this,event)" class="runningform ">
+                <!--Put your API key into this field's value -->
+                <input type="hidden" name="Token" value="API Key goes here">
 
-                <p>Name:</p><input placeholder="Name" name="Name" required="required" type="text"><br>
-                <p>Surname:</p><input placeholder="Surname" name="Surname" required="required" type="text"><br>
-                <p>Email:</p><input placeholder="Email" name="Email" required="required" type="email"><br>
-                <p>Message:</p><textarea placeholder="Message" name="Message" required="required"></textarea><br>
+                <input type="hidden" name="Subject" value="Email Subject">
+
+
+
+                <p>Name:</p>
+                <input placeholder="Name" id="name" type="text" name="Name" required="required"><br>
+                <p>Surname:</p>
+                <input placeholder="Surname" type="text" name="Surname" required="required"><br>
+                <p>Email:</p>
+                <input placeholder="Email" type="email" name="Email" required="required"><br>
+                <p>Message:</p>
+                <textarea placeholder="Message" name="Message" required="required"></textarea><br>
                 <span class="span" style="color:transparent;font-size:0px"><a href="http://tackter.io"> Powered by Tackter.io</a></span>
-                <button type="submit" class="runningbtn" id="submitbtn"><span>Hover </span></button>
+                <span class="text-center"><button type="submit" id="submitbtn" class="runningbtn">Submit</button></span>
             </form>
+            <div class="thanks" style="display: none;">
+                <h1>Thanks <span id="namer"></span></h1>
+            </div>
 
 
         </div>
         <div class="foot">
-            <a onclick="toHome()">Go to Element</a>
+
         </div>
-
-
-    </div>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/site.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/site.js"></script>
 
 </body>
 

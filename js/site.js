@@ -60,3 +60,22 @@ $(document).ready(function() {
         $(this).fadeTo('fast', 1.0)
     });
 });
+
+function slideHide() {
+
+    $(".runningform").slideToggle(1000)
+    $(".thanks").slideToggle(1000)
+    var name = $("#name").val();
+
+    $("#namer").html(name)
+}
+
+function postForm(obj, event) {
+
+    event.preventDefault();
+    $.post("http://api.tackter.io/api/UserForms", $(obj).serialize(), slideHide);
+
+
+
+
+}
