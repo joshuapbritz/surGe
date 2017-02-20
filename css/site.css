@@ -211,7 +211,7 @@
 
 .foot {
     width: 100%;
-    height: 25vh;
+    height: 300px;
     background-color: #000;
 }
 
@@ -281,15 +281,22 @@
     padding-top: 90px;
 }
 
+@media screen and (max-width: 600px) {
+    .col-foot-1 {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+}
+
 .col-foot-1 a {
-    color: greenyellow;
+    color: #ff6600;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
 }
 
 .col-foot-1 a:hover {
-    color: green;
+    color: #ff8533;
     text-decoration: none;
     -webkit-transition: ease-in 0.3s;
     -moz-transition: ease-in 0.3s;
@@ -303,14 +310,19 @@
     background-color: transparent;
     text-align: center;
     color: #fff;
-    font-size: 80px;
     padding-right: 70px;
     padding-top: 60px;
 }
 
+@media screen and (max-width: 600px) {
+    .col-foot-2 a {
+        font-size: 10px;
+    }
+}
+
 .col-foot-2 a {
     color: #fff;
-    font-size: 65px;
+    font-size: 50px;
     cursor: pointer;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -349,6 +361,12 @@
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    .col-foot-3 a {
+        font-size: 40px;
+    }
 }
 
 .col-foot-3 a:hover {

@@ -88,3 +88,11 @@ function YearGet() {
     document.getElementById("Year").innerHTML = n;
 }
 YearGet();
+
+
+$(document).ready(function() {
+    $("#titletext").slideToggle(1000, function() {
+        $("#sub").fadeToggle(1000)
+    })
+
+})

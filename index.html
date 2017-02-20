@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>surGe</title>
+    <title>SURGE</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <script src="js/jquery3.1.1.js"></script>
     <script src="js/animatescroll.js"></script>
     <script src="js/appml.js"></script>
@@ -46,8 +48,9 @@
     <div id="main">
         <div class="head">
             <div class="dcm">
-                <h1>surGe</h1>
-                <h2>Run for Passion</h2>
+                <img id="LOGO" src="img/logo.png" width="200px">
+                <h1 id="titletext" style="display: none;">surGe</h1>
+                <h2 id="sub" style="display: none;">Run for Passion | Passion for Running</h2>
             </div>
         </div>
         <div class="about">
@@ -115,7 +118,7 @@
                 <p>Message:</p>
                 <textarea placeholder="Message" name="Message" required="required"></textarea><br>
                 <span class="span" style="color:transparent;font-size:0px"><a href="http://tackter.io"> Powered by Tackter.io</a></span>
-                <span class="text-center"><button type="submit" id="submitbtn" class="runningbtn">Submit</button></span>
+                <button type="submit" id="submitbtn" class="runningbtn"><span>Submit </span></button>
             </form>
             <div class="thanks" style="display: none;">
                 <h1>Thanks <span id="namer"></span></h1>
@@ -125,14 +128,10 @@
         </div>
         <div class="foot">
             <div class="col-foot-1">
-                <h4>&copy; surGe <span id="Year"></span> - design <a>Joshua Britz</a></h4>
+                <h4>&copy; surGe <span id="Year"></span> - design <a href="http://sitego.co.za/" target="_blank">Joshua Britz</a></h4>
             </div>
             <div class="col-foot-2">
-                <ul>
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
+
             </div>
             <div class="col-foot-3">
                 <a onclick="toHome()"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
